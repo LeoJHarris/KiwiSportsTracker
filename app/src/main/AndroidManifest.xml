@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lh.leonard.kiwisporttracker" >
+
+    <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Kiwi Sports Tracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllBlacksSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BlackCapsSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".SilverFernsOceaniaTriSeriesSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NetBall"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BreakersSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Rugby"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Soccer"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BasketBall"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Hockey"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NRL"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Cricket"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WhiteFernsSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".AucklandAcesFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".AucklandHeartsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CanterburyCricketFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CanterburyMagiciansFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CentralHindsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CentralStagsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NorthernKnightsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NorthernSpiritFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".OtagoSparksFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".OtagoVoltsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WellingtonBlazeFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WellingtonFirebirdsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CanterburyKingsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BlackFernsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MaoriAllBlackFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".U20AllBlacksFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".JuniorAllBlacksFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BluesFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".ChiefsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CrusadersFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".HighlandersFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".HurricanesFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WellingtonPhoenixFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BreakersManawatuJetsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MagicFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".PulseFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NorthernMysticsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".SouthernSteelFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".TallBlacksFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WarriorsFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Surfing"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".FifaU20Fixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".CricketWorldCupFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NRL9Fixtures"
+            android:label="Kiwi Sports Tracker" />
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".TactixFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".TennisNzEvents"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Golf"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NZGolfUpcomingEvents"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".OOMEvents"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MajorWorldSportingEvents"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".RowingEvents"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".LydiosKoSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".PGaSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".LPGASchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".RugbySevensFixtures"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".AtpWorldTourSchedule"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Tennis"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WorldSurfLeague"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NZSurf"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".Swimming"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MensSamsungGalaxyChampionshipTour"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WomensSamsungGalaxyChampionshipTour"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MensQualifyingSeries"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WomensQualifyingSeries"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BigWaveTour"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".IccCricketLive"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".InvesticSuperRugby"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".HeartlandRugby"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".BullerHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".EastCoastHeatland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".HorowhenuaKapitiHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".KingCountryHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".MidCanterburyHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".NorthOtagoHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".PovertyBayHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".SouthCanterburyHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".ThamesValleyHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WairarapaBushHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WanganuiHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".WestCoastHeartland"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".HeartlandRugbyAllTeams"
+            android:label="Kiwi Sports Tracker" />
+        <activity
+            android:name=".ItmCup"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".AucklandItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".TaranakiItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".BayOfPlentyItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".SouthlandItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".WaikatoItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".TasmanItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".NorthHarbourItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".WellingtonItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".OtagoItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".CanterburyItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".CountiesManukauItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".ManuwatuItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".HawkesBayItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+        <activity
+            android:name=".NorthlandItm"
+            android:label="Kiwi Sports Tracker" >
+        </activity>
+    </application>
+
+</manifest>

@@ -81,7 +81,7 @@ public class AllBlacksSchedule extends Activity {
 
                 Document doc = Jsoup.connect("http://www.allblacks.com/Fixtures/").get(); // Connect to the site for Html
                 doc = Jsoup.parse(doc.toString());
-                Date date = new Date();
+                Date  date = new Date();
                 Elements eles = doc.select("tr, .content_title");
                 int number = 0;
 

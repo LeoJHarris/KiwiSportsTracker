@@ -28,9 +28,9 @@ public class Rugby extends Activity {
         Sports rugbySports[] = new Sports[]
                 {
                         new Sports("All Blacks"),
-                        new Sports("2015 Investic Super Rugby"),
-                        new Sports("2015 ITM Cup"),
-                        new Sports("2015 Rugby Heartland")
+                        new Sports("2016 Investic Super Rugby"),
+                        new Sports("2016 ITM Cup"),
+                        new Sports("2016 Rugby Heartland")
 
                 };
 

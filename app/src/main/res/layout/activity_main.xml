@@ -7,18 +7,17 @@
 
     <ListView
         android:id="@+id/listViewSport"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         ads:adSize="BANNER"
-        android:layout_alignParentBottom="true"
-        ads:adUnitId="ca-app-pub-8825309769570137/8153069937"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="ca-app-pub-8825309769570137/8153069937"/>
 
 </LinearLayout>

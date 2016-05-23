@@ -2,10 +2,8 @@ package com.lh.leonard.kiwisporttracker;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -14,9 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
-import java.util.List;
-import java.util.Stack;
+import com.kobakei.ratethisapp.RateThisApp;
 
 public class MainActivity extends Activity {
 
@@ -52,12 +48,12 @@ public class MainActivity extends Activity {
 
         listView1 = (ListView) findViewById(R.id.listViewSport);
 
-        View header = (View) getLayoutInflater().inflate(R.layout.listview_header_row, null);
+        View header = getLayoutInflater().inflate(R.layout.listview_header_row, null);
 
         TextView headerValue = (TextView) header.findViewById(R.id.txtHeader);
         headerValue.setText("New Zealand Sports");
 
-        View footer = (View) getLayoutInflater().inflate(R.layout.listview_footer_row, null);
+        View footer = getLayoutInflater().inflate(R.layout.listview_footer_row, null);
         listView1.addHeaderView(header);
         listView1.setAdapter(adapter);
         listView1.addFooterView(footer);
@@ -119,6 +115,18 @@ public class MainActivity extends Activity {
                 }
             }
         }
+        // Custom criteria: 3 days and 5 launches
+        RateThisApp.Config config = new RateThisApp.Config(8, 5);
+        // Custom title and message
+        config.setTitle(R.string.rta_dialog_title);
+        config.setMessage(R.string.rta_dialog_message);
+        RateThisApp.init(config);
+
+
+        // Monitor launch times and interval from installation
+        RateThisApp.onStart(this);
+        // If the criteria is satisfied, "Rate this app" dialog will be shown
+        RateThisApp.showRateDialogIfNeeded(this);
     }
 
     public void goToFacebook(View view) {
